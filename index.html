@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mohammad Malla Othman</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	
+	<div class="bg-img1 size1 flex-w flex-c-m p-t-55 p-b-55 p-l-15 p-r-15" style="background-image: url('images/bg01.jpg');">
+		<div class="wsize1 bor1 bg1 p-t-175 p-b-45 p-l-15 p-r-15 respon1">
+			<div class="wrappic1">
+				
+			</div>
+		<p class="txt-center m1-txt1 p-t-33 p-b-68">
+				Personal website for Muhammad Mulla Othman
+			</p>
+			<p class="txt-center m1-txt1 p-t-33 p-b-68">
+				My website is under construction
+			</p>
+
+			<div class="wsize2 flex-w flex-c hsize1 cd100">
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt1 p-b-9 days">0</span>
+					<span class="s1-txt1">Days</span>
+				</div>
+
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt1 p-b-9 hours">0</span>
+					<span class="s1-txt1">Hours</span>
+				</div>
+
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt1 p-b-9 minutes">0</span>
+					<span class="s1-txt1">Minutes</span>
+				</div>
+
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt1 p-b-9 seconds">0</span>
+					<span class="s1-txt1">Seconds</span>
+				</div>
+			</div>
+
+		
+<p class="s1-txt4 txt-center p-t-10">
+<a href="mailto:mhd@othman.info" style="color: #333333;" >Email : mhd@othman.info</a>
+</p>
+			<p class="s1-txt4 txt-center p-t-10">
+				<a style="color: #333333; 30px;border-radius: 50%;padding: 20px;font-size: 30px;width: 30px;text-align: center;text-decoration: none;" href="https://linkedin.com/in/mohammad-m-othman-b01730134/" class="fa fa-linkedin"></a>
+			<a  style="color: #333333; margin-left: 30px;border-radius: 50%;padding: 20px;font-size: 30px;width: 30px;text-align: center;text-decoration: none;"href="https://www.facebook.com/M.m.o00/" class="fa fa-facebook"></a>
+			<a  style="color: #333333; margin-left: 30px;border-radius: 50%;padding: 20px;font-size: 30px;width: 30px;text-align: center;text-decoration: none;"href="	https://github.com/MohammadMOTH/" class="fa fa-github"></a>
+		
+			</p>
+			
+		</div>
+	</div>
+
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+	
+var duration= moment.duration(moment(1593464400000).diff( moment(new Date())));
+var days = Math.floor( duration.asDays());
+duration.subtract(moment.duration(days,'days'));
+var hours = duration.hours();
+duration.subtract(moment.duration(hours,'hours'));
+var minutes = duration.minutes();
+duration.subtract(moment.duration(minutes,'minutes'));
+var seconds = duration.seconds();
+
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: days,
+			endtimeHours: hours,
+			endtimeMinutes: minutes,
+			endtimeSeconds: seconds,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
